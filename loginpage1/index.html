@@ -1,0 +1,57 @@
+<!-- 로그인 페이지 -->
+
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>다모아 로그인 페이지</title>
+    {% load static %}
+    <!-- <link rel="stylesheet" href="{% static 'style.css' %}"> -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  </head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+</style>
+<body>
+  <div id="header">
+    <h1>다모아</h1>
+    {{error}}
+  </div>
+  <div id="container">
+    <div id="content">
+      <div id="login_form">
+        <form method="POST" action=".">
+          {% csrf_token %}
+        <div id="id_area">
+          <span id="input_box">
+            <input id = "email" name = "email" placeholder="이메일을 입력해 주세요">
+          </span>
+        </div>
+        <div id="pw_area" >
+          <span id="input_box">
+            <input type = "password" id = "password" name = "password" placeholder="비밀번호를 입력해 주세요">
+          </span>
+        </div>
+        <div id="login_check">
+          <!-- <input type="checkbox">
+          <label>로그인 상태 유지</label> -->
+        </div>
+        <button id="btn">로그인</button>
+        </form>
+      </div>
+      <div id="position_a">
+        <a>아이디 찾기</a>
+        <span id="var">ㅣ</span>
+        <a>비밀번호 찾기</a>
+        <span id="var">ㅣ</span>
+        <a href="{% url 'register'%}" style="text-decoration:none"> 회원가입</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

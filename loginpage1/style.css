@@ -1,0 +1,82 @@
+body {
+  background:#f5f6f7;
+}
+#header {
+  position: relative;
+  margin-top: 450px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width:768px;
+}
+
+#header h1 {
+  text-align:center;
+  color: #9ed3ba;
+  font-family: 'Nanum pen Script', cursive;
+  font-size: 150px;
+}
+
+#container {
+  position: relative;
+  margin-left:auto; 
+  margin-right:auto;
+  width: 700px;
+  height: 60px;
+}
+
+#content{
+  position: relative;
+  margin-left:auto; 
+  margin-right:auto;
+  text-align: left;
+}
+
+#id_area, #pw_area{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#input_box input {
+  width: 700px;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid #bccbbc;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 35px;
+}
+
+
+#input_box input:hover {
+  border: 3px solid #9ed3ba;
+}
+
+#btn {
+  position: relative;
+  width: 500px;
+  height: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  color:white;
+  border: none; 
+  border-radius: 5px;
+  background-color:#9ed3ba;
+  font-family: 'Nanum pen Script', cursive;
+  font-size: 50px;
+}
+
+#btn:active {
+  background-color: #bccbbc;
+  color: #ffffff;
+}
+
+#position_a {
+  text-align:center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-family: 'Nanum pen Script', cursive;
+  font-size: 35px;
+}
